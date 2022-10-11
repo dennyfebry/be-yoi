@@ -6,6 +6,7 @@ require('dotenv').config();
 
 app.use(express.json());
 app.use(cartRouter);
+
 app.get('/', (req, res) => {
     res.send('Hello World');
 });
