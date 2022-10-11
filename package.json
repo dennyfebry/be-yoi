@@ -1,0 +1,29 @@
+{
+  "name": "be-yoi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennyfebry/be-yoi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennyfebry/be-yoi/issues"
+  },
+  "homepage": "https://github.com/dennyfebry/be-yoi#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fastest-validator": "^1.15.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "router": "^1.3.7"
+  }
+}
