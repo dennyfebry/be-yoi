@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Wishlist = sequelize.define(
-    "Wishlist",
+  const User = sequelize.define(
+    "User",
     {
       id: {
         type: DataTypes.INTEGER,
@@ -8,11 +8,14 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         allowNull: false,
       },
-      userId: {
-        type: DataTypes.INTEGER,
+      fullname: {
+        type: DataTypes.STRING,
       },
-      productId: {
-        type: DataTypes.INTEGER,
+      username: {
+        type: DataTypes.STRING,
+      },
+      password: {
+        type: DataTypes.STRING,
       },
       createdAt: {
         type: DataTypes.DATE,
@@ -22,9 +25,9 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
-      tableName: "sd_wishlist",
+      tableName: "sd_user",
     }
   );
 
-  return Wishlist;
+  return User;
 };
